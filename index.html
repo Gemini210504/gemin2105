@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ពិភពនៃប្រលោមលោកភាគចិន</title>
+    <link rel="stylesheet" href="bookstyle.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to ពិភពនៃរឿងភាគចិន</h1>
+    </header>
+    <div class="tab-container">
+        <button class="tab-button" onclick="showTab('romance')">Romance</button>
+        <button class="tab-button" onclick="showTab('mystery')">Mystery</button>
+        <button class="tab-button" onclick="showTab('action')">Action</button>
+    </div>
+
+    <div id="romance" class="tab-content">
+        <h2>រឿងបែបមនោសញ្ចេតនា</h2>
+        <div class="book" onclick="openModal('book1')">
+            <h3>1. One and Only (ស្នេហាតែមួយនិងតែម្នាក់គត់)</h3>
+            <img src="https://i.mydramalist.com/BLrkR_4f.jpg" alt="Romance Book Cover" class="story-image">
+        </div>
+        <div class="book" onclick="openModal('book2')">
+            <h3>2. You are my glory (អ្នកគឺជាលំហអាកាសរបស់ខ្ញុំ)</h3>
+            <img src="https://upload.wikimedia.org/wikipedia/en/b/b7/You_Are_My_Glory.jpg" alt="Romance Book Cover 2" class="story-image">
+        </div>
+    </div>
+
+    <div id="mystery" class="tab-content" style="display:none;">
+        <h2>រឿងបែបស៊ើបអង្គេត</h2>
+        <div class="book" onclick="openModal('book3')">
+            <h3>1. តាមប្រមាញ់ដល់ទីបំផុត</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6tO2cISg01BVeE8hfTdtG9dmbA9lw6gN6pg&s" alt="Mystery Book Cover" class="story-image">
+        </div>
+    </div>
+
+    <div id="action" class="tab-content" style="display:none;">
+        <h2>រឿងបែបវាយប្រហា</h2>
+        <div class="book" onclick="openModal('book4')">
+            <h3>1. ក្បាច់កុនក្រឡាប់ចាក់</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCi3dQmp6HwxTgVLDJGBwvCkAygS3Syve1Gw&s" alt="Action Book Cover" class="story-image">
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="book1" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('book1')">&times;</span>
+            <h2>One and Only (ស្នេហាតែមួយនិងតែម្នាក់គត់)</h2>
+            <p> 
+                Zhou Sheng Chen was raised by his brother, the Emperor, until the age of thirteen, when
+                he set out to defend the border and establish himself as a loyal and accomplished general.
+                Cui Shi Yi, the well-read daughter of an esteemed family, has been betrothed to the Crown 
+                Prince since birth. However, political scheming and tragic events result in Cui Shi Yi falling
+                mute, her former fiance becoming a child Emperor, and Zhou Sheng Chen returning to the capital 
+                amidst a cloud of political turmoil. Against the Cui family's protests, the Empress Dowager Regent 
+                changes the terms of Cui Shi Yi's betrothal. Her new fiance is the Emperor's sickly, young companion
+                and the future Crown Prince, if he can survive long enough to come of age. Zhou Sheng Chen accepts
+                Cui Shi Yi as his disciple to resolve lingering animosity between the royal family and the Cui family,
+                and Cui Shi Yi suddenly finds herself leaving her sheltered life in the capital for Zhou Manor in the
+                Western State.  Despite their differences as a mute and sheltered young noblewoman from the capital
+                and a battle-hardened general, Zhou Sheng Chen and Cui Shi Yi soon form a strong bond as master and 
+                disciple. However, their relationship is impeded by their respective principles and responsibilities,
+                while the ongoing power struggle in the palace constantly threatens to entangle them both once more.
+            </p>
+            <div class="rating">
+                <p>Rate this book:</p>
+                <span class="star" onclick="rate('book1', 1)">&#9733;</span>
+                <span class="star" onclick="rate('book1', 2)">&#9733;</span>
+                <span class="star" onclick="rate('book1', 3)">&#9733;</span>
+                <span class="star" onclick="rate('book1', 4)">&#9733;</span>
+                <span class="star" onclick="rate('book1', 5)">&#9733;</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="book2" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('book2')">&times;</span>
+            <h2>2. You are my glory (អ្នកគឺជាលំហអាកាសរបស់ខ្ញុំ)</h2>
+            <p>
+                A story that follows an aerospace engineer Yu Tu and the shining star Qiao Jing Jing.
+                A decision is made to start gaming in order to save her endorsement deal brings her face
+                to face with an old crush. As they grow closer, the two forge ahead to become each other's glory.
+                Being a well-known celebrity, Qiao Jing Jing has to keep up with appearances in order to maintain
+                her multi-faceted image. Alas, one starts to crack when someone leaks a video of her playing an online
+                game and being terrible at it which is completely inconsistent with the image she has created for herself 
+                as the game's ambassador. Thus, she joins a gaming competition to prove her skills and to prevent herself
+                from losing her endorsements.Qiao Jing Jing decides to use all of her free time towards improving her game
+                and her decision leads her to reconnect with her old high school classmate, Yu Tu, whom she once had a crush
+                on. He was a legend at their school, outstanding in everything that he does, while Qiao Jing Jing was just 
+                your average girl. Yu Tu went on to become an aerospace engineer who is also an expert gamer. It seems that
+                the online game brought them together once more so she asks him to become her gaming coach.
+
+            </p>
+            <div class="rating">
+                <p>Rate this book:</p>
+                <span class="star" onclick="rate('book2', 1)">&#9733;</span>
+                <span class="star" onclick="rate('book2', 2)">&#9733;</span>
+                <span class="star" onclick="rate('book2', 3)">&#9733;</span>
+                <span class="star" onclick="rate('book2', 4)">&#9733;</span>
+                <span class="star" onclick="rate('book2', 5)">&#9733;</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="book3" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('book3')">&times;</span>
+            <h2>តាមប្រមាញ់ដល់ទីបំផុត</h2>
+            <p>Description of the book goes here...</p>
+            <div class="rating">
+                <p>Rate this book:</p>
+                <span class="star" onclick="rate('book3', 1)">&#9733;</span>
+                <span class="star" onclick="rate('book3', 2)">&#9733;</span>
+                <span class="star" onclick="rate('book3', 3)">&#9733;</span>
+                <span class="star" onclick="rate('book3', 4)">&#9733;</span>
+                <span class="star" onclick="rate('book3', 5)">&#9733;</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="book4" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('book4')">&times;</span>
+            <h2>ក្បាច់កុនក្រឡាប់ចាក់</h2>
+            <p>Description of the book goes here...</p>
+            <div class="rating">
+                <p>Rate this book:</p>
+                <span class="star" onclick="rate('book4', 1)">&#9733;</span>
+                <span class="star" onclick="rate('book4', 2)">&#9733;</span>
+                <span class="star" onclick="rate('book4', 3)">&#9733;</span>
+                <span class="star" onclick="rate('book4', 4)">&#9733;</span>
+                <span class="star" onclick="rate('book4', 5)">&#9733;</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="bookjs.js"></script>
+</body>
+</html>
